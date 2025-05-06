@@ -1,0 +1,26 @@
+@url_base = http://localhost:8080/ProjetoAliLeo/usuarios
+
+### Cadastrar usuário
+
+POST {{url_base}}/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Lucas",
+    "email": "lucas@gmail.com",
+    "senha": "123456",
+}
+
+### Login
+POST {{url_base}}/login
+Content-Type: application/json
+
+{
+    "email": "lucas@gmail.com",
+    "senha": "123456"
+}
+
+### Listar usuários
+GET {{url_base}}/listar
+Content-Type: application/json
+
